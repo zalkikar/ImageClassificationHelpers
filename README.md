@@ -22,7 +22,7 @@ revimgdownload(['class1','class2'], # classes
 import os
 classdir = os.chdir(mydir+"\\XXXXXX") # directory where class is present
 from ZDhasher import dhasher # class
-dirs = ['C:/Users/me/data/class1',
+dirs = ['C:/Users/me/data/class1', # class folders
        'C:/Users/me/data/class2']
        
 dhashobj = dhasher(dirs)
