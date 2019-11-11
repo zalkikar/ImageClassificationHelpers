@@ -1,8 +1,8 @@
 # I download based on reverse image google search using an image url to obtain similar images of our classes.
 
-# I used a variety of links throughout to incorporate as many types of steak and images as possible.
-# In an effort to aid reproducability, I used many of my source images for each class from https://fr.123rf.com/
-# I used this site for its isolated steak pictures against a plate/white backgrounds - making for good base pictures
+# I used a variety of links throughout to incorporate as many types of images as possible.
+# In an effort to aid reproducability, I tend to use many of my source images per class from https://fr.123rf.com/
+# I used this site for its isolated object pictures against white backgrounds - making for good base pictures
 
 # Note that keywords can be also be used in this method if needed.
 # If you want to do this, you will have to modify the class below to include keywords in the arguments dict.
@@ -22,12 +22,12 @@ class revimgdownload:
     
     # chromedriver_path should be in encoding compatible string form. 
     # ex. "C:/Users/rayzc/Downloads/chromedriver_win32/chromedriver.exe"
-    # you might not have to specify this path, just ""
+    # if scraping less than 100 images, you might not have to specify this path - just use ""
     
     # num_image_limit is the MAX number of images download. Sometimes there will be less
     
     # base_dir is your image directory (main folder which contains class folders of images). 
-    # ex. base_dir = "C:/Users/rayzc/Downloads/DonenessData/"
+    # ex. base_dir = "C:/Users/rayzc/Downloads/Data/"
     # This should also be in encoding compatible string form
     
     def __init__(self,clas_list,link_list,chromedriver_path,num_image_limit,base_dir):
